@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P/L:"
+                android:layout_marginEnd="10dp"
+                style="@style/TextViewStyle"
+                />
+
+            <TextView
+                android:id="@+id/plRon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginEnd="10dp"
+            />
+
+            <TextView
+                android:id="@+id/plEur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+            />
+
+        </LinearLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/refresh"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:background="@drawable/round_button"-->
+            <!--android:text="@string/refresh_button"-->
+        <!--/>-->
+
+    </RelativeLayout>
+
+
+
+    <ListView
+        android:id="@+id/fundsList"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/border_bottom"
+        android:paddingTop="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        >
+    </ListView>
+
+
+
+</LinearLayout>

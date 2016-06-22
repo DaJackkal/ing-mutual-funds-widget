@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:orientation="vertical"
+        android:layout_marginEnd="15dp">
+
+        <TextView
+            android:id="@+id/fundName"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            style="@style/TextViewStyle"
+            />
+
+        <TextView
+            android:id="@+id/fundUnits"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:textSize="10sp"
+            style="@style/TextViewStyle"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fundCurrentPrice"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2"
+        android:gravity="center_vertical|end"
+        style="@style/TextViewStyle"
+    />
+
+    <TextView
+        android:id="@+id/fundProfitAmount"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2"
+        android:gravity="center_vertical|end"
+        style="@style/TextViewStyle"
+        />
+
+    <TextView
+        android:id="@+id/fundProfitPercentage"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2"
+        android:gravity="center_vertical|end"
+        style="@style/TextViewStyle"
+        />
+
+</LinearLayout>
